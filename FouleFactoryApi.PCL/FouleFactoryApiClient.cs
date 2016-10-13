@@ -128,5 +128,15 @@ namespace FouleFactoryApi.PCL
             Configuration.BasicAuthUserName = basicAuthUserName;
             Configuration.BasicAuthPassword = basicAuthPassword;
         }
+
+        /// <summary>
+        /// Client initialization constructor
+        /// </summary>
+        public FouleFactoryApiClient(string baseUri, string basicAuthUserName, string basicAuthPassword)
+        {
+            Configuration.BaseUri = baseUri;
+            Configuration.BasicAuthUserName = basicAuthUserName;
+            Configuration.BasicAuthPassword = basicAuthPassword;
+        }
     }
 }
